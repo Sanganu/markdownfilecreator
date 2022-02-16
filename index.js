@@ -80,6 +80,9 @@ ${githubTEXT}
 .then(function(data){
     fs.writeFileSync("./README.md", data)
 })
+.catch( error => {
+    console.log("Error in generating markdown file ",error)
+})
 }
 
 initfunction() 

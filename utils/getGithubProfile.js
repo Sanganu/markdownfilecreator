@@ -1,7 +1,7 @@
-module.exports = ({login,following,followers,email,public_repos}) =>{
+module.exports = ({login,following,followers,email,company,name,blog,location,public_repos}) =>{
     return(`
-        <br>
-        (____)
+    
+    
         # ABOUT THE AUTHOR
     
         ## GITHUB USERNAME: ${login}
@@ -12,7 +12,7 @@ module.exports = ({login,following,followers,email,public_repos}) =>{
             
         Followers: ${followers}
             
-        Public repo: ${public_repos}`
-        (____)
+        Public repo: ${public_repos}
+   `
         )
 }
