@@ -1,7 +1,12 @@
-var inquirer = require("inquirer")
-var axios = require("axios")
+const inquirer = require("inquirer");
+const axios = require("axios");
+const githubProfile = require("./utils/getGithubProfile");
+const generateProject = require("./utils/generateProject");
+const fs = require("fs");
+
+
+const initfunction = () =>{
 var userinput;
-var fs = require("fs")
 inquirer.prompt([
     {
         type:"input",
@@ -57,47 +62,24 @@ inquirer.prompt([
         default:"npm test"
     }
 ])
-.then(function(response){
+.then(async (response) => {
     console.log(response)
-    userinput = response;
+    userinput = await generateProject(response);
      return axios.get(`https://api.github.com/users/${response.github}`) 
-}).then(function(apiresponse){
+}).then( async (apiresponse) => {
     console.log("API RESPONSE",apiresponse.data)
-    let  readmetext = `
-# ABOUT THE AUTHOR
-    
-## GITHUB USERNAME: ${apiresponse.data.login}
-    
-Email: ${userinput.email}
-    
-Following: ${apiresponse.data.following}
-    
-Followers: ${apiresponse.data.followers}
-    
-Public repo: ${[apiresponse.data.public_repos]}
+    let githubTEXT = await githubProfile(apiresponse.data)
+    return  `
 # ABOUT THIS PROJECT
- * ### PROJECT1: ${userinput.url}
- [![GitHub license](https://img.shields.io/badge/license-${userinput.license}-blue.svg)](https://github.com/${userinput.github}/${userinput.projectrepo})
- * ![GitHub license] (https://img.shields.io/badge/license-${userinput.license}-blue.svg)
- * *  Project URL:[ Projecturl ] (https://github.com/${userinput.github}/${userinput.projectrepo})
-    
-    
- *  Project title: ${[userinput.projecttitle]}
-    
-    
- *  Description: ${[userinput.description]}
-    
-    
- *  Installation: ${[userinput.installation]}
-    
-    
- *   Usage: ${[userinput.usage]}
-        
- *   NOTE to Contributors: ${[userinput.contributions]}
- *   Tests: ${[userinput.tests]}
+${userinput}
+
+${githubTEXT}
     `
-    return readmetext
+    
 })
 .then(function(data){
     fs.writeFileSync("./README.md", data)
 })
+}
+
+initfunction()

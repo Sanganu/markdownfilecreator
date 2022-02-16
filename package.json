@@ -13,5 +13,9 @@
     "axios"
   ],
   "author": "sangeetha",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "inquirer": "^8.2.0"
+  }
 }
