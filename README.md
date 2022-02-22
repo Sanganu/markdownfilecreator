@@ -1,47 +1,41 @@
 
 # ABOUT THIS PROJECT
 
-    * ### PROJECT1: undefined
-    ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-    
-    
+* ### PROJECT: Markdown creator
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-    * ![GitHub license] (https://img.shields.io/badge/license-MIT-blue.svg)
+* ![GitHub license] (https://img.shields.io/badge/license-MIT-blue.svg)
     
-    *  Project URL:[ Projecturl ] (https://github.com/kj/ss)
-       
-       
-    *  Project title: sss
-       
-       
-    *  Description: sdsds
-       
-       
-    *  Installation: sds
-       
-    *  Usage: we
-           
-    *  NOTE to Contributors: weqw
+*  Project URL:[ Projecturl ] (https://github.com/sanganu/markdowncreator)
     
-    *  Tests: npm test
+*  Project title: Markdown creator
+       
+*  Description: Nodejs backend app.
+
+*  Installation: npm i
+
+*  Usage: fre
+      
+*  NOTE to Contributors: None
+   
+*  Tests: npm test
     
-    *  Contact me: kjh@as.com
+*  Contact me: text@test.com
    
     
 
 
     
-    
-        ## ABOUT THE AUTHOR
-    
-        ## GITHUB USERNAME: kj
+## ABOUT THE AUTHOR
+   
+## GITHUB USERNAME: Sanganu
             
-        Email on Github Profile: null
+Email on Github Profile: null
             
-        Following: 0
+Following: 1
             
-        Followers: 5
+Followers: 0
             
-        Public repo: 17
+Public repo: 41
    
     
