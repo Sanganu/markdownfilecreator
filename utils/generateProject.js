@@ -1,9 +1,13 @@
 module.exports = (userinput) => {
     return(`
     * ### PROJECT1: ${userinput.url}
-    [![GitHub license](https://img.shields.io/badge/license-${userinput.license}-blue.svg)](https://github.com/${userinput.github}/${userinput.projectrepo})
+    ![GitHub license](https://img.shields.io/badge/license-${userinput.license}-blue.svg)
+    
+    
+
     * ![GitHub license] (https://img.shields.io/badge/license-${userinput.license}-blue.svg)
-    * *  Project URL:[ Projecturl ] (https://github.com/${userinput.github}/${userinput.projectrepo})
+    
+    *  Project URL:[ Projecturl ] (https://github.com/${userinput.github}/${userinput.projectrepo})
        
        
     *  Project title: ${[userinput.projecttitle]}
@@ -14,14 +18,13 @@ module.exports = (userinput) => {
        
     *  Installation: ${[userinput.installation]}
        
-       
-    *   Usage: ${[userinput.usage]}
+    *  Usage: ${[userinput.usage]}
            
-    *   NOTE to Contributors: ${[userinput.contributions]}
+    *  NOTE to Contributors: ${[userinput.contributions]}
     
-    *   Tests: ${[userinput.tests]}
+    *  Tests: ${[userinput.tests]}
     
-    *   Contact me: ${userinput.email}
+    *  Contact me: ${userinput.email}
    
     `)
 }

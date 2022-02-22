@@ -12,37 +12,98 @@ inquirer.prompt([
         type:"input",
         message:"what is your github username?",
         name:"github",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter Github username"
+            }
+            else{
+                return true;
+            }
+        }
     },
     {
         type:"input",
         message:"what is your email address?",
         name:"email",
+        validate: function(input){
+            let regexp = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+            if(regexp.test(input)){
+                return true;
+            }else{
+                return "Please enter a valid email"
+            }
+        }
     },
     {
         type:"input",
         message:"what is your project repo?",
         name:"projectrepo",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter Github username"
+            }
+            else{
+                return true;
+            }
+        }
     },
     {
         type: "input",
         message:"what is your project title?",
-        name:"projecttitle"
+        name:"projecttitle",
+        validate: function(input){
+            let regexp = new RegExp('[a-zA-z]+-?[a-zA-Z]');
+            if(regexp.test(input)){
+                return true;
+            }else{
+                return "Please enter a valid Title"
+            }
+        }
     },
     {
         type: "input",
         message:"what is your description?",
-        name:"description"
+        name:"description",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter project description"
+            }
+            else{
+                return true;
+            }
+        }
     },
     {
         type:"input",
         message:"what were your installations?",
         name:"installation",
-        default: "npm i"
+        default: "npm i",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter installation instructions"
+            }
+            else{
+                return true;
+            }
+        }
     },
     {
         type:"input",
         message:"what is your usage terms?",
-        name:"usage"
+        name:"usage",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter usage terms"
+            }
+            else{
+                return true;
+            }
+        }
     },
     {
         type:"list",
@@ -53,13 +114,31 @@ inquirer.prompt([
     {
         type:"input",
         message:"what should your contributors know?",
-        name:"contributions"
+        name:"contributions",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter contibutors to the project"
+            }
+            else{
+                return true;
+            }
+        }
     },
     {
         type:"input",
         message:"what were your tests?",
         name:"tests",
-        default:"npm test"
+        default:"npm test",
+        validate: function(input){
+            console.log(input)
+            if(  input == ""){
+                return "Please enter testing requirements"
+            }
+            else{
+                return true;
+            }
+        }
     }
 ])
 .then(async (response) => {

@@ -2,43 +2,46 @@
 # ABOUT THIS PROJECT
 
     * ### PROJECT1: undefined
-    [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sk/asksa)
+    ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+    
+    
+
     * ![GitHub license] (https://img.shields.io/badge/license-MIT-blue.svg)
-    * *  Project URL:[ Projecturl ] (https://github.com/sk/asksa)
+    
+    *  Project URL:[ Projecturl ] (https://github.com/kj/ss)
        
        
-    *  Project title: sa
+    *  Project title: sss
        
        
-    *  Description: as
+    *  Description: sdsds
        
        
-    *  Installation: s
+    *  Installation: sds
        
-       
-    *   Usage: s
+    *  Usage: we
            
-    *   NOTE to Contributors: s
+    *  NOTE to Contributors: weqw
     
-    *   Tests: npm test
+    *  Tests: npm test
     
-    *   Contact me: slka
+    *  Contact me: kjh@as.com
    
     
 
 
-        <br>
-        ____
-        # ABOUT THE AUTHOR
     
-        ## GITHUB USERNAME: sk
+    
+        ## ABOUT THE AUTHOR
+    
+        ## GITHUB USERNAME: kj
             
         Email on Github Profile: null
             
         Following: 0
             
-        Followers: 2
+        Followers: 5
             
-        Public repo: 4
-        ____   
+        Public repo: 17
+   
     

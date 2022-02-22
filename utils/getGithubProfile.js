@@ -2,7 +2,7 @@ module.exports = ({login,following,followers,email,company,name,blog,location,pu
     return(`
     
     
-        # ABOUT THE AUTHOR
+        ## ABOUT THE AUTHOR
     
         ## GITHUB USERNAME: ${login}
             
