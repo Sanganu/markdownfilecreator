@@ -13,7 +13,7 @@ inquirer.prompt([
         message:"what is your github username?",
         name:"github",
         validate: function(input){
-            console.log(input)
+           
             if(  input == ""){
                 return "Please enter Github username"
             }
@@ -40,7 +40,7 @@ inquirer.prompt([
         message:"what is your project repo?",
         name:"projectrepo",
         validate: function(input){
-            console.log(input)
+           
             if(  input == ""){
                 return "Please enter Github username"
             }
@@ -67,7 +67,7 @@ inquirer.prompt([
         message:"what is your description?",
         name:"description",
         validate: function(input){
-            console.log(input)
+        
             if(  input == ""){
                 return "Please enter project description"
             }
@@ -82,7 +82,7 @@ inquirer.prompt([
         name:"installation",
         default: "npm i",
         validate: function(input){
-            console.log(input)
+         
             if(  input == ""){
                 return "Please enter installation instructions"
             }
@@ -96,7 +96,7 @@ inquirer.prompt([
         message:"what is your usage terms?",
         name:"usage",
         validate: function(input){
-            console.log(input)
+         
             if(  input == ""){
                 return "Please enter usage terms"
             }
@@ -118,7 +118,7 @@ inquirer.prompt([
         validate: function(input){
             console.log(input)
             if(  input == ""){
-                return "Please enter contibutors to the project"
+                return "Please enter contributors to the project"
             }
             else{
                 return true;
@@ -131,7 +131,7 @@ inquirer.prompt([
         name:"tests",
         default:"npm test",
         validate: function(input){
-            console.log(input)
+        
             if(  input == ""){
                 return "Please enter testing requirements"
             }
@@ -142,11 +142,11 @@ inquirer.prompt([
     }
 ])
 .then(async (response) => {
-    console.log(response)
+    console.log("user",response,`https://api.github.com/users/${response.github}`)
     userinput = await generateProject(response);
      return axios.get(`https://api.github.com/users/${response.github}`) 
 }).then( async (apiresponse) => {
-    console.log("API RESPONSE",apiresponse.data)
+    console.log(apiresponse.data)
     let githubTEXT = await githubProfile(apiresponse.data)
     return  `
 # ABOUT THIS PROJECT
@@ -157,7 +157,7 @@ ${githubTEXT}
     
 })
 .then(function(data){
-    fs.writeFileSync("./README.md", data)
+    fs.writeFileSync("./OUTPUTREADME.md", data)
 })
 .catch( error => {
     console.log("Error in generating markdown file ",error)

@@ -1,11 +1,11 @@
 module.exports = ({login,following,followers,email,company,name,blog,location,public_repos}) =>{
     return(`
     
-## ABOUT THE AUTHOR
+##### ABOUT THE AUTHOR
    
-## GITHUB USERNAME: ${login}
+GITHUB Profile: ${login}
             
-Email on Github Profile: ${email}
+Email on Github Profile: <${email}>
             
 Following: ${following}
             

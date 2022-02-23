@@ -3,7 +3,7 @@ module.exports = (userinput) => {
 * ### PROJECT: ${userinput.projecttitle}
 ![GitHub license](https://img.shields.io/badge/license-${userinput.license}-blue.svg)
 
-* ![GitHub license] (https://img.shields.io/badge/license-${userinput.license}-blue.svg)
+
     
 *  Project URL:[ Projecturl ] (https://github.com/${userinput.github}/${userinput.projectrepo})
     
