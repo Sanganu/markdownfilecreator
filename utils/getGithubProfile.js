@@ -5,7 +5,7 @@ module.exports = ({login,following,followers,email,company,name,blog,location,pu
    
 GITHUB Profile: ${login}
             
-Email on Github Profile: <${email}>
+Email on Github Profile: < ${email} >
             
 Following: ${following}
             

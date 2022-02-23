@@ -1,11 +1,12 @@
 module.exports = (userinput) => {
     return(`
 * ### PROJECT: ${userinput.projecttitle}
+
 ![GitHub license](https://img.shields.io/badge/license-${userinput.license}-blue.svg)
+   
+*  Project URL:
 
-
-    
-*  Project URL:[ Projecturl ] (https://github.com/${userinput.github}/${userinput.projectrepo})
+[ Projecturl ](https://github.com/${userinput.github}/${userinput.projectrepo})
     
 *  Project title: ${[userinput.projecttitle]}
        
@@ -19,7 +20,7 @@ module.exports = (userinput) => {
    
 *  Tests: ${[userinput.tests]}
     
-*  Contact me: ${userinput.email}
+*  Contact me: <${userinput.email}>
    
     `)
 }

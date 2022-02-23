@@ -1,26 +1,27 @@
 
 # ABOUT THIS PROJECT
 
-* ### PROJECT: Mrkdown generator
+* ### PROJECT: markdown 
+
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+   
+*  Project URL:
 
-
+[ Projecturl ](https://github.com/sanganu/readmecreator)
     
-*  Project URL:[ Projecturl ] (https://github.com/scodingjs/readmecreator)
-    
-*  Project title: Mrkdown generator
+*  Project title: markdown 
        
-*  Description: Nodejs app
+*  Description: nodejs app
 
 *  Installation: npm i
 
 *  Usage: Public
       
-*  NOTE to Contributors: Feature enhacement, adding unit testing.
+*  NOTE to Contributors: Adding unit test
    
 *  Tests: Manual
     
-*  Contact me: test@test.com
+*  Contact me: <test@test.com>
    
     
 
@@ -28,14 +29,14 @@
     
 ##### ABOUT THE AUTHOR
    
-GITHUB Profile: scodingjs
+GITHUB Profile: Sanganu
             
-Email on Github Profile: <null>
+Email on Github Profile: < null >
             
-Following: 6
+Following: 1
             
-Followers: 3
+Followers: 0
             
-Public repo: 7
+Public repo: 41
    
     
